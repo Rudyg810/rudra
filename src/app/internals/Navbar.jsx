@@ -40,8 +40,8 @@ export function Navbar (){
       and remove your data from our servers.
         </p>
         <div className=" h-[500px] block py-5  space-y-8">
-<div className="  flex">
-<div className="w-4/6 h-full my-auto px-3 border rounded-lg  relative">
+<div className=" block sm:flex">
+<div className="sm:w-4/6 h-full my-auto px-3  rounded-lg  relative">
   <div
     className="absolute inset-0 bg-cover m-2 bg-center bg-no-repeat filter blur border border-white"
     style={{
@@ -49,14 +49,14 @@ export function Navbar (){
       zIndex: "-1",
     }}
   ></div>
-  <Link href={"/influencer-ai"}>
+  <Link href={"https://petrichorthrift.com"} target="blank">
   <div role="button" className="relative hover:scale-95 transition duration-300 z-10 py-3.5">
   <img src="/petri.png" alt="Main Content" className="w-full rounded-sm h-auto" />
   </div>
   </Link>
 
 </div>
- <div className="w-2/6  py-4 px-2 pl-3">
+ <div className="sm:w-2/6 py-4  px-2 pl-3">
 <h1 className="text-white font-semibold ">Petrichor</h1>
 <p className="text-gray-300  text-xs">
 Join our AI-powered platform to connect with top brands, customize campaigns, access analytics, and elevate your influencer impact. </p>
@@ -82,7 +82,7 @@ Join our AI-powered platform to connect with top brands, customize campaigns, ac
     <SheetContent className="bg-black border-none text-white">
     <SheetHeader >
       <SheetTitle>
-      <div  className="text-3xl text-white mt-2 ">
+      <div  className="text-3xl flex text-white mt-2 ">
       <span className="text-purple-600">Products</span> Created</div></SheetTitle>
       <SheetDescription>
         <div className=" ">
@@ -92,8 +92,8 @@ Join our AI-powered platform to connect with top brands, customize campaigns, ac
         </p>
         
         <div className=" h-[500px] block py-5  space-y-8">
-<div className="  flex">
-<div className="w-4/6 h-full my-auto px-3  relative">
+<div className="block  sm:flex">
+<div className="sm:w-4/6 h-full my-auto px-3  relative">
   <div
     className="absolute inset-0 bg-cover m-2 bg-center bg-no-repeat filter blur"
     style={{
@@ -108,8 +108,8 @@ Join our AI-powered platform to connect with top brands, customize campaigns, ac
   </div>
   </Link>
 </div>
- <div className="w-2/6  py-4 px-2 pl-3">
-<h1 className="text-yellow font-semibold ">Influencer AI</h1>
+ <div className="sm:w-2/6  py-4 px-2 pl-3">
+<h1 className="text-white font-semibold ">Influencer AI</h1>
 <p className="text-gray-300  text-xs">
 Join our AI-powered platform to connect with top brands, customize campaigns, access analytics, and elevate your influencer impact. </p>
  </div>
@@ -119,28 +119,6 @@ Join our AI-powered platform to connect with top brands, customize campaigns, ac
 <div className="border-t mx-6 border-purple-600"></div>
 
 
-<div className="  flex">
-<div className="w-4/6 h-full my-auto px-3  relative">
-  <div
-    className="absolute inset-0 bg-cover m-2 bg-center bg-no-repeat filter blur"
-    style={{
-      backgroundImage: "url('/inf.png')",
-      zIndex: "-1",
-    }}
-  ></div>
-    <Link href={"/influencer-ai"}>
-
-  <div role="button" className="relative hover:scale-95 transition duration-300 z-10 py-3">
-    <img src="/inf.png" alt="Main Content" className="w-full rounded-sm h-auto" />
-  </div>
-  </Link>
-</div>
- <div className="w-2/6  py-4 px-2 pl-3">
-<h1 className="text-yellow font-semibold ">Influencer AI</h1>
-<p className="text-gray-300  text-xs">
-Join our AI-powered platform to connect with top brands, customize campaigns, access analytics, and elevate your influencer impact. </p>
- </div>
-</div>
 
 
 </div>
@@ -177,8 +155,8 @@ Join our AI-powered platform to connect with top brands, customize campaigns, ac
 
 
         <div className=" h-[500px] block py-5  space-y-8">
-<div className="  flex">
-<div className="w-4/6 h-full my-auto px-3  relative">
+<div className=" block sm:flex">
+<div className="sm:-4/6 h-full my-auto px-3  relative">
   <div
     className="absolute inset-0 bg-cover m-2 bg-center bg-no-repeat filter blur-xl"
     style={{
@@ -194,7 +172,7 @@ Join our AI-powered platform to connect with top brands, customize campaigns, ac
   </div>
   </Link>
 </div>
- <div className="w-2/6  py-4 px-2 pl-3">
+ <div className="sm:w-2/6  py-4 px-2 pl-3">
 <h1 className="text-white font-semibold "><span className="text-purple-600">Work</span> Experience</h1>
 <p className="text-gray-300  text-xs">
 Join our AI-powered platform to connect with top brands, customize campaigns, access analytics, and elevate your influencer impact. </p>

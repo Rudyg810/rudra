@@ -17,16 +17,21 @@ export function Footer() {
             </div>
             <div className="flex mx-2 justify-center border-gray-500 border-t-[0.5px] w-full  pt-6 items-center mt-12 mb-4">
                 <a 
-                    href="https://twitter.com/yourusername" 
+                    href="/" 
+                    target='blank'
                     className="mx-4" 
                     title="Contact us on Twitter"
                 >
                     <FaXTwitter size={30} className=" hover:scale-105 trasition duration-300  p-1" />
                 </a>
-                <a href="https://linkedin.com" className="mx-4">
+                <a
+                    target='blank'
+                    href="https://www.linkedin.com/in/rudra-070a0a303/" className="mx-4">
                     <FaLinkedinIn size={30} className=" hover:scale-105 trasition duration-300  p-1" />
                 </a>
-                <a href="https://paypal.com" className="mx-4">
+                <a 
+                    target='blank'
+                href="https://paypal.com" className="mx-4">
                     <ImPaypal size={30} className=" hover:scale-105 trasition duration-300  p-1" />
                 </a>
             </div>
