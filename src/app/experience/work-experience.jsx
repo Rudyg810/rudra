@@ -26,11 +26,11 @@ export function WorkExperience() {
   };
   
   return (
-    <div className="w-full p-4 max-w-7xl mx-auto">
+    <div className="w-full  max-w-7xl mx-auto">
 
 <AnimatePresence>
       <motion.div
-        className="flex font-bold justify-center text-6xl"
+        className="flex font-bold justify-center text-3xl sm:text-6xl"
         initial="initial"
         animate="animate"
         exit="exit"
@@ -39,72 +39,74 @@ export function WorkExperience() {
         <div className="text-center text-purple-400">WORK</div> EXPERIENCE
       </motion.div>
     </AnimatePresence>
-      <div className="w-full mt-10 flex  flex-wrap">
+    <div className="border-t border-purple-600 mx-5 my-2"/>
+      <div className="w-full mt-2 flex  flex-wrap">
 
         {/* Experience 1 */}
-        <div className="w-3/4 block">
-          <div className="w-full p-1">
-            <div className="border-t border-purple-800 hover:shadow-lg pt-4 p-3">
-              <div className="justify-between flex">
-                <h1 className="text-5xl font-semibold">Barsati Films</h1>
-                <span className="text-purple-300 font-semibold py-3">06/2024-Current</span>
-              </div>
-              <ul className="mt-4">
-                <strong className="ml-3 text-2xl">Stir Deployment</strong>
-                <li className="ml-5 text-gray-300"><span className="-ml-2.5">-</span> Handled the entire deployment stage for a SaaS application with Digital Ocean, working on Droplets, Load Balancing, staging, and production.</li>
-                <li className="ml-5 text-gray-300"><span className="-ml-2.5">-</span> Created CI/CD Pipeline using Jenkins with Docker containerization and GitHub plugins automation, integrated with the Droplet.</li>
-                <li className="ml-5 text-gray-300"><span className="-ml-2.5">-</span> Worked on CDN with Object Storing and Managed Services.</li>
-              </ul>
-              <ul className="mt-4">
-                <strong className="ml-3 text-2xl">Stir-Backend</strong>
-                <li className="ml-5 text-gray-300"><span className="-ml-2.5">-</span> Created cron-job schedulers using RabbitMQ for efficient asynchronous programming using a queue structure.</li>
-                <li className="ml-5 text-gray-300"><span className="-ml-2.5">-</span> Integrated Proxy Mesh for IP rotation and large-scale scraping, adding proxies to effectively collect data from third-party sources.</li>
-              </ul>
-            </div>
-          </div>
 
-          {/* Experience 2 */}
-          <div className="w-full p-1">
-            <div className="border-t border-purple-800 hover:shadow-lg pt-4 p-3">
-              <div className="justify-between flex">
-                <h1 className="text-5xl font-semibold">Finxsystem</h1>
-                <span className="text-purple-300 font-semibold py-3">07/2023-Current</span>
-              </div>
-              <ul className="mt-4">
-                <strong className="ml-3 text-2xl">Finx Website Creation & Deployment</strong>
-                <li className="ml-5 text-gray-300"><span className="-ml-2.5">-</span> Deployed a web application on AWS, including working with EC2 instances, integrating S3 buckets for object storage, and SES for email functionalities.</li>
-                <li className="ml-5 text-gray-300"><span className="-ml-2.5">-</span> Worked on Lambda serverless functions and integrated them into web applications, ensuring robust backend and runtime disaster management with Boto3 automation and CloudWatch.</li>
-              </ul>
-              <ul className="mt-4">
-                <strong className="ml-3 text-2xl">Performance Analyzer</strong>
-                <li className="ml-5 text-gray-300"><span className="-ml-2.5">-</span> Created a Performance Analyzer in MERN, integrating tools like pcap and Perfview for system/application log generation with centralized logging.</li>
-              </ul>
-              <ul className="mt-4">
-                <strong className="ml-3 text-2xl">Infrastructure Migration to Azure</strong>
-                <li className="ml-5 text-gray-300"><span className="-ml-2.5">-</span> Created a CI/CD Data Pipeline using Azure Data Factory's Integration Runtime to migrate the database from a local machine to Azure Cloud Data Lake.</li>
-              </ul>
-            </div>
-          </div>
 
-          {/* Experience 3 */}
-          <div className="w-full p-1">
-            <div className="border-t border-purple-800 hover:shadow-lg pt-4 p-3">
-              <div className="justify-between flex">
-                <h1 className="text-5xl font-semibold">Ascer Solution</h1>
-                <span className="text-purple-300 font-semibold py-3">02/2024-06/2024</span>
-              </div>
-              <ul className="mt-4">
-                <strong className="ml-3 text-2xl">WiFi Standards Toolkit</strong>
-                <li className="ml-5 text-gray-300"><span className="-ml-2.5">-</span> Developed real-time data collection scripts for the custom-measurement industry, creating RVR, RVOR, and other test cases for Wi-Fi standard checks using LANs with high computation and multiprocessing (cluster).</li>
-                <li className="ml-5 text-gray-300"><span className="-ml-2.5">-</span> Configured secure web/LAN sockets and SSH, working with MongoDB sharding and replication.</li>
-                <li className="ml-5 text-gray-300"><span className="-ml-2.5">-</span> Enabled parallel processing to manage high data volume, ensuring timely analysis, and applied Llama NLP model for training.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+<div className="sm:w-3/4 w-full block">
+  {/* Experience 1 */}
+  <div className="w-full p-1">
+    <div className="hover:shadow-lg px-6">
+      <div className="justify-between flex">
+        <h1 className="text-xl font-semibold">Barsaati Films (Delhi Based Start-Up) – SDE (Full Stack + DevOps)</h1>
+        <span className="text-purple-300 text-xs font-semibold py-3">June 2024 – Current</span>
+      </div>
+      <ul className="mt-4">
+        <strong className="ml-3 underline text-lg">CreateStir Marketing Application</strong>
+        <li className="ml-4 text-xs text-gray-300"><span className="-ml-2.5">-</span> Led <strong className="underline">deployment</strong> for <strong className="underline">microservice SaaS</strong> with <strong className="underline">Digital Ocean</strong>, including <strong className="underline">load balancers</strong>, and configuring multiple environments with <strong className="underline">Nginx</strong>, <strong className="underline">DNS</strong>, and <strong className="underline">SSL</strong>.</li>
+        <li className="ml-4 text-xs text-gray-300"><span className="-ml-2.5">-</span> <strong className="underline">Pipelines</strong> with <strong className="underline">Jenkins</strong> & <strong className="underline">Docker</strong> reduced deployment times by 30% and improved uptime by 15% with faster builds.</li>
+        <li className="ml-4 text-xs text-gray-300"><span className="-ml-2.5">-</span> Developed SaaS with <strong className="underline">NestJs</strong> & <strong className="underline">NextJs</strong>, achieving 25% faster load times through <strong className="underline">SSR/SSG</strong>, alongside <strong className="underline">PostgreSQL</strong>, layered with <strong className="underline">GraphQL</strong> for scalable querying.</li>
+        <li className="ml-4 text-xs text-gray-300"><span className="-ml-2.5">-</span> Managed large-scale <strong className="underline">influencer database</strong> with extensive <strong className="underline">web scraping</strong> and <strong className="underline">Cron jobs</strong> on remote servers, ensuring efficient <strong className="underline">container orchestration</strong> with <strong className="underline">Kubernetes (K8s)</strong>.</li>
+        <li className="ml-4 text-xs text-gray-300"><span className="-ml-2.5">-</span> Leveraged <strong className="underline">RabbitMQ</strong> for queuing processing with 100% uptime. Optimized <strong className="underline">proxy rotations</strong> with <strong className="underline">Bright Data</strong>, ensuring 99% reliability across pipelines.</li>
+      </ul>
+    </div>
+  </div>
+  <div className="border-t border-purple-600 mx-6 my-2"/>
+
+  {/* Experience 2 */}
+  <div className="w-full p-1">
+    <div className="hover:shadow-lg px-4">
+      <div className="justify-between flex">
+        <h1 className="text-xl font-semibold">TradeSocio (UAE Based FinTech) – NodeJS + Cloud Engineer - Remote</h1>
+        <span className="text-purple-300 text-xs font-semibold py-3">May 2024 – Current</span>
+      </div>
+      <ul className="mt-4">
+        <strong className="ml-3 underline text-lg">Go Market Trading Application</strong>
+        <li className="ml-4 text-xs text-gray-300"><span className="-ml-2.5">-</span> Worked on <strong className="underline">migration</strong> of <strong className="underline">Mongo-based architecture</strong> to <strong className="underline">PostgreSQL</strong>, implementing <strong className="underline">Redis</strong> for caching, and <strong className="underline">sharding</strong> to handle large-scale data, increasing query performance by 40%.</li>
+        <li className="ml-4 text-xs text-gray-300"><span className="-ml-2.5">-</span> Optimized <strong className="underline">socket connections</strong> with batching and compression, minimizing fallback by 20%.</li>
+        <li className="ml-4 text-xs text-gray-300"><span className="-ml-2.5">-</span> Created <strong className="underline">CI-CD pipelines</strong> with <strong className="underline">Azure DevOps</strong> for parallel builds and automated testing within the pipeline, improving <strong className="underline">high availability</strong> by 30%.</li>
+      </ul>
+    </div>
+  </div>
+  <div className="border-t border-purple-600 mx-6 my-2"/>
+
+  {/* Experience 3 */}
+  <div className="w-full p-1">
+    <div className="hover:shadow-lg px-4">
+      <div className="justify-between flex">
+        <h1 className="text-xl font-semibold">FinXsystems (Canadian Fintech Start-Up) – Research & Development Engineer</h1>
+        <span className="text-purple-300 text-xs font-semibold py-3">June 2024 – Current - Remote (Part-Time)</span>
+      </div>
+      <ul className="mt-4">
+        <strong className="ml-3 underline text-lg">Infrastructure Migration</strong>
+        <li className="ml-4 text-xs text-gray-300"><span className="-ml-2.5">-</span> Designed <strong className="underline">CI/CD pipeline</strong> using <strong className="underline">Azure Data Factory</strong>’s <strong className="underline">Linked Services</strong> and <strong className="underline">Integration Runtime</strong>. Facilitated the <strong className="underline">migration</strong> of databases from on-premises to <strong className="underline">Azure Cloud Data Lake</strong>, reducing manual errors by 85%.</li>
+        <li className="ml-4 text-xs text-gray-300"><span className="-ml-2.5">-</span> Used <strong className="underline">Azure Virtual Machines (VMs)</strong> to process data post-migration, improving operational efficiency by 15%.</li>
+      </ul>
+      <ul className="mt-4">
+        <strong className="ml-3 underline text-lg">FinXsystem Service Site</strong>
+        <li className="ml-4 text-xs text-gray-300"><span className="-ml-2.5">-</span> Led the end-to-end development and deployment of the <strong className="underline">web application</strong> with <strong className="underline">AWS EC2</strong>, using <strong className="underline">CloudFront</strong> as a <strong className="underline">CDN</strong>, increasing delivery speed by 30%.</li>
+        <li className="ml-4 text-xs text-gray-300"><span className="-ml-2.5">-</span> Integrated <strong className="underline">notification Lambda function</strong>, increasing execution efficiency by 30%.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
 
         {/* Skills Section */}
-        <div className="w-1/4 p-1 pl-4">
+        <div className="sm:w-1/4 sm:block hidden p-1 pl-4">
           <div className="p-5 h-full ">
           <div className="block">
               <strong className="ml-1 text-2xl text-purple-400">AWS</strong>

@@ -4,7 +4,7 @@ import { ImPaypal } from 'react-icons/im';
 
 export function Footer() {
     return (
-        <div className="text-white w-full border px-24  py-10 border-black-100 bg-black-100">
+        <div className="text-white w-full border sm:px-24  py-10 border-black-100 bg-black-100">
             <div className="text-left mx-2 mb-1">
                 <h2 className="text-lg font-bold">Rudra *</h2>
                 <div className="w-fit border-t  text-white ml-0 border border-black-100 pt-2">

@@ -3,7 +3,7 @@ import { Navbar } from "./Navbar";
 
 export function HomeSection(){
     return(
-        <div className="w-full relative text-white bg-black-100    h-fit">
+        <div className="w-full relative text-white h-fit">
            
 <div className="mt-10"><Navbar/>
     </div>            

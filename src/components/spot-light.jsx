@@ -6,7 +6,7 @@ import Link from "next/link";
 export const Spotlight = () => {
   return (
     <div
-      className=" flex flex-col p-20 mt-10  items-center justify-center bg-black-100 dark:bg-zinc-900 text-white transition-bg"
+      className=" flex flex-col sm:p-20 p-6  items-center justify-center bg-black-100 dark:bg-zinc-900 text-white transition-bg"
     >
 
 
@@ -21,9 +21,9 @@ export const Spotlight = () => {
           }}
           className="relative flex flex-col gap-4 items-center justify-center px-4"
         >
-          <div className="text-3xl md:text-7xl font-bold dark:text-white text-center">
+          <div className="sm:text-3xl text-2xl md:text-7xl font-bold dark:text-white text-center">
             Transforming Concepts in Seamless{" "}
-            <div className="text-purple-400 text-8xl mt-6">Innovations</div>
+            <div className="text-purple-400 text-6xl sm:text-8xl mt-3 sm:mt-6">Innovations</div>
           </div>
           <div className="font-extralight flex text-base md:text-xl dark:text-neutral-200 py-4">
             Hi, I am<div className="text-purple-400  font-semibold flex mx-1.5">Rudra</div> Watch my Journey
