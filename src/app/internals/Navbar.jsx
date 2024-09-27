@@ -156,7 +156,7 @@ Join our AI-powered platform to connect with top brands, customize campaigns, ac
 
         <div className=" h-[500px] block py-5  space-y-8">
 <div className=" block sm:flex">
-<div className="sm:-4/6 h-full my-auto px-3  relative">
+<div className="sm:w-4/6 h-full my-auto px-3  relative">
   <div
     className="absolute inset-0 bg-cover m-2 bg-center bg-no-repeat filter blur-xl"
     style={{

@@ -13,43 +13,69 @@ module.exports = {
   ],
   prefix: "", // Optional prefix for Tailwind classes
   theme: {
-    container: {
-      center: true, // Center the container
-      padding: "2rem", // Padding for container
-      screens: {
-        "2xl": "1400px", // Custom breakpoint for 2xl screens
-      },
-    },
-    extend: {
-      colors: {
-        yellow: {
-          DEFAULT: '#FFD700', // Bright yellow
-          dark: '#DAA520',    // Goldenrod for darker yellow
-        },
-        black: {
-          DEFAULT: '#000', // Default black
-          100: '#000319', // Custom black shade
-        },
-      },
-      fontFamily: {
-        'hm-sans': ['"HM Sans Regular"', 'sans-serif'],
-        assistant:['Assistant', 'sans-serif']
-      },
-      keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-      },
-    },
+  	container: {
+  		center: 'true',
+  		padding: '2rem',
+  		screens: {
+  			'2xl': '1400px'
+  		}
+  	},
+  	extend: {
+  		colors: {
+  			yellow: {
+  				DEFAULT: '#FFD700',
+  				dark: '#DAA520'
+  			},
+  			black: {
+  				'100': '#000319',
+  				DEFAULT: '#000'
+  			}
+  		},
+  		fontFamily: {
+  			'hm-sans': ['HM Sans Regular"', 'sans-serif'],
+  			assistant: ['Assistant', 'sans-serif']
+  		},
+  		keyframes: {
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
+  			},
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
+  			}
+  		},
+  		animation: {
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out'
+  		}
+  	}
   },
   plugins: [require("tailwindcss-animate")], // Add Tailwind CSS animation plugin
 };
