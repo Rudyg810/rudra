@@ -77,7 +77,7 @@ export function WorkExperience() {
     <div className="hover:shadow-lg px-4">
       <div className="justify-between flex">
         <h1 className="text-xl sm:text-3xl font-semibold">TradeSocio (UAE Based FinTech) – NodeJS + Cloud Engineer - Remote</h1>
-        <span className="text-purple-300 text-xs font-semibold sm:py-0 py-3">May 2024 – Current</span>
+        <span className="text-purple-300 text-xs font-semibold sm:py-0 py-3">May 2024 – Current - (Internship)</span>
       </div>
       <ul className="mt-4">
         <strong className="ml-3 underline text-lg italic">Go Market Trading Application</strong>
