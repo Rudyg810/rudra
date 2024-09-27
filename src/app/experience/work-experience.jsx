@@ -94,7 +94,7 @@ export function WorkExperience() {
     <div className="hover:shadow-lg px-4">
       <div className="justify-between flex">
         <h1 className="text-xl sm:text-3xl font-semibold">FinXsystems (Canadian Fintech Start-Up) – Research & Development Engineer</h1>
-        <span className="text-purple-300 text-xs font-semibold sm:py-0 py-3">June 2024 – Current - Remote (Part-Time)</span>
+        <span className="text-purple-300 text-xs font-semibold sm:py-0 py-3">Aug 2023 – Current - Remote (Part-Time)</span>
       </div>
       <ul className="mt-4">
         <strong className="ml-3 underline text-lg italic">Infrastructure Migration</strong>
