@@ -1,6 +1,7 @@
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { ImPaypal } from 'react-icons/im';
+import { FaGithub } from "react-icons/fa";
 
 export function Footer() {
     return (
@@ -30,6 +31,14 @@ export function Footer() {
                     target='blank'
                 href="https://paypal.com" className="mx-4">
                     <ImPaypal size={30} className=" hover:scale-105 trasition duration-300  p-1" />
+                </a>
+                <a 
+                    href="https://github.com/rudyg810" 
+                    target='blank'
+                    className="mx-4" 
+                    title="Contact us on Github"
+                >
+                    <FaGithub size={30} className=" hover:scale-105 trasition duration-300  p-1" />
                 </a>
             </div>
         </div>
