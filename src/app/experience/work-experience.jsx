@@ -7,6 +7,52 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
+const aws = [
+  { name: "EC2" },
+  { name: "ECR" },
+  { name: "ECS" },
+  { name: "Lambda" },
+  { name: "S3" },
+  { name: "ELB" },
+  { name: "VPS" },
+  { name: "Cloudwatch" },
+  { name: "Amplify" },
+  { name: "Cloudfront" }
+];
+const frontendTechnologies = [
+  "ReactJs",
+  "NextJs",
+  "Tailwind",
+  "Redux",
+  "Hooks",
+];
+const databases = ["MongoDB", "PostgreSql", "GraphQL", "Redis"];
+const tools = ["Docker", "Nginx", "Kubernetes", "Jenkins", "Azure DevOps","Bash"]
+const technologies = [
+  "NodeJS",
+  "NestJs",
+  "DJango",
+  "Flask",  
+  "RabbitMq",
+  "Kafka",
+  "Microservice",
+  "NXWorkspace",
+  "Webhooks",
+  "Payment Gateway",
+  "Rest/Fast API",
+  "Sockets",
+  "Web RTC",
+  "LangChain", 
+
+];
+
+const azureServices = [
+  { name: "Data Factory" },
+  { name: "VPC" },
+  { name: "Azure Migrate" },
+  { name: "Data Lake" }
+];
+
 export function WorkExperience() {
   const textVariants = {
     initial: {
@@ -126,45 +172,17 @@ export function WorkExperience() {
     </AccordionTrigger>
     <AccordionContent>
     <div className="flex flex-wrap mt-1">
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  EC2
-                </div>
-
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  ECR
-                </div>
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  Lambda
-                </div>
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  S3
-                </div>
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  ELB
-                </div>
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  VPS
-                </div>
-
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  Boto3
-                </div>
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  Cloudwatch
-                </div>
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  IAM
-                </div>
-              </div>
+  {aws.map((service, index) => (
+    <div
+      key={index}
+      role="button"
+      className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center"
+    >
+      <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
+      {service.name}
+    </div>
+  ))}
+</div>
     </AccordionContent>
   </AccordionItem>
 </Accordion>
@@ -177,26 +195,18 @@ export function WorkExperience() {
     </AccordionTrigger>
     <AccordionContent>
     <div className="flex flex-wrap mt-1">
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  Data Factory
-                </div>
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  VPS
-                </div>
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  Azure Migrate
-                </div>
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  Data Lake
-                </div>
-              
+  {azureServices.map((service, index) => (
+    <div
+      key={index}
+      role="button"
+      className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center"
+    >
+      <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
+      {service.name}
+    </div>
+  ))}
+</div>
 
-        
-              </div>
     </AccordionContent>
   </AccordionItem>
 </Accordion>
@@ -207,66 +217,18 @@ export function WorkExperience() {
     <AccordionTrigger> <strong className="ml-1 text-lg sm:text-xl text-purple-400">BACKEND</strong></AccordionTrigger>
     <AccordionContent>
     <div className="flex flex-wrap mt-1">
-
-<div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-  NodeJS
+  {technologies.map((tech, index) => (
+    <div
+      key={index}
+      role="button"
+      className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center"
+    >
+      <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
+      {tech}
+    </div>
+  ))}
 </div>
-<div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-  NestJs
-</div>
-<div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-  DJango
-</div>
-<div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-  Webhooks
-</div>
-<div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-  RabbitMq
-</div>
-<div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-  Linux Bash
-</div>
-<div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-  Payment Gateway
-</div>
-<div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-  SSE
-</div>
-<div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-  Redis
-</div>
-<div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-  Rest/Fast API
-</div>
-<div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
- Sockets
-</div>
-<div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
- Web RTC
-</div>
-
-<div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-  LangChain
-</div>
-
-
-
-
-
-</div>    </AccordionContent>
+  </AccordionContent>
   </AccordionItem>
 </Accordion>
            
@@ -275,24 +237,18 @@ export function WorkExperience() {
     <AccordionTrigger> <strong className="ml-1 text-lg sm:text-xl text-purple-400">MISCLENEOUS</strong></AccordionTrigger>
     <AccordionContent>
     <div className="flex flex-wrap mt-1">
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  Docker
-                </div>
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  Nginx
-                </div>
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  Kubernetes
-                </div>
-
-                
-              
-
-        
-              </div>    </AccordionContent>
+  {tools.map((tool, index) => (
+    <div
+      key={index}
+      role="button"
+      className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center"
+    >
+      <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
+      {tool}
+    </div>
+  ))}
+</div>
+   </AccordionContent>
   </AccordionItem>
 </Accordion>
 
@@ -302,36 +258,17 @@ export function WorkExperience() {
     </AccordionTrigger>
     <AccordionContent>
     <div className="flex flex-wrap mt-1">
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  MongoDB
-                </div>
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  PostgreSql
-                </div>
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  Oracle
-                </div>
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  GraphQL
-                </div>
-
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  SQL
-                </div>
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  NOSQL
-                </div>
-                
-              
-
-        
-              </div>
+  {databases.map((db, index) => (
+    <div
+      key={index}
+      role="button"
+      className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center"
+    >
+      <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
+      {db}
+    </div>
+  ))}
+</div>
     </AccordionContent>
   </AccordionItem>
 </Accordion>
@@ -343,36 +280,18 @@ export function WorkExperience() {
     </AccordionTrigger>
     <AccordionContent>
     <div className="flex flex-wrap mt-1">
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  ReactJs
-                </div>
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  NextJs
-                </div>
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                  <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  Tailwind
-                </div>
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  Redux
-                </div>
+  {frontendTechnologies.map((tech, index) => (
+    <div
+      key={index}
+      role="button"
+      className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center"
+    >
+      <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
+      {tech}
+    </div>
+  ))}
+</div>
 
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  Hook
-                </div>
-                <div role="button" className="border-2 border-purple-600 hover:scale-95 transition duration-300 px-3 py-1 m-1 text-white font-semibold text-xs rounded-full flex items-center">
-                <div className="rounded-full w-2 h-2 bg-purple-400 my-auto mr-2"></div>
-                  Refs
-                </div>
-                
-              
-
-        
-              </div>
     </AccordionContent>
   </AccordionItem>
 </Accordion>
